@@ -1,0 +1,18 @@
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::522841335262:user/aws-examples"
+            },
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::aws-examples-bucket-policy-522841335262",
+                "arn:aws:s3:::aws-examples-bucket-policy-522841335262/*"
+            ]
+        }
+    ]
+}
